@@ -18,30 +18,63 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <a href="#">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины"> 
+          <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины" title="Перейти в корзину"> 
           <span>Корзина</span>
         </a>
       </nav>
     </header>
     
     <main>
-      <p>Магазин готовых шаблонов</p>
+      <h1>Магазин готовых шаблонов</h1>
 
       <section class="catalog">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <aside class="filters">
-          <h2 class="hidden">Фильтр товаров</h2>
-          <!-- Здесь будет форма фильтра -->
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <div>
-              <p>Стоимость:</p>
-            </div>
-            <div>
-              <p>Сетка:</p>
-            </div>
-            <div>
-              <p>Особенности:</p>
-            </div>
-            <button>Показать</button>
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input id="fixed" type="radio" name="grid" value="fixed">
+                  <label for="fixed">Фиксированная</label>   
+                </li>
+                <li>
+                  <input id="rubber" type="radio" name="grid" value="rubber">
+                  <label for="rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input id="filter-slider" type="checkbox" name="slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input id="filter-advantages" type="checkbox" name="advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input id="filter-news" type="checkbox" name="news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input id="filter-gallery" type="checkbox" name="gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input id="filter-basket" type="checkbox" name="basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
           </form>
         </aside>
 
@@ -58,8 +91,7 @@
         </div>
     
         <section>
-        <!--Здесь будут шаблоны-->
-          <h2 class="hidden">Шаблоны</h2>
+          <h2 class="visually-hidden">Шаблоны</h2>
           <ul>
             <li>
               <a href="">
@@ -135,9 +167,9 @@
       </nav>
 
       <section class="map">
-        <h2 class="hidden">Как до нас добраться</h2>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <div>
-          <h1>NЁRDS DESIGN STUDIO</h1>
+          <p>NЁRDS DESIGN STUDIO</p>
           <address>
             <span>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  </span>
             <span>тел. +7 (812) 275-75-75</span>
@@ -154,16 +186,16 @@
 
     <footer>
       <section>
-        <h2 class="hidden">Ссылки на наши социальные сети</h2>
+        <h2 class="visually-hidden">Ссылки на наши социальные сети</h2>
         <ul>
           <li>
-            <a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="vk-logo"></a>
+            <a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте" title="Перейти на страницу vk"></a>
           </li>
           <li>
-            <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook-logo"></a>
+            <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook" title="Перейти на страницу fb"></a>
           </li>
           <li>
-            <a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="inst-logo"></a>
+            <a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Instagram" title="Перейти на страницу instagram"></a>
           </li>
         </ul>
       </section>
@@ -174,5 +206,23 @@
       </section>
     </footer>
 
+    <div class="modal">
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="login">Ваше имя:</label>
+          <input id="login" type="text" name="login-modal" placeholder="Представьтесь, пожалуйста" required>  
+        </p>
+        <p>
+          <label for="email">Ваш email:</label>
+          <input id="email" type="email" name="email-modal" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="comment">Текст письма:</label>
+          <textarea name="comment-modal" id="comment" placeholder="В свободной форме" cols="70" rows="4"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
