@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="index">
-      <a href="#">
+      <a href="#" aria-label="Ссылка на главную страницу Нердс">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип магазина шаблонов Нёрдс">
       </a>
       <nav>
@@ -17,7 +17,7 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="#">
+        <a href="#" aria-label="Ссылка на корзину">
           <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины" title="Перейти в корзину"> 
           <span>Корзина</span>
         </a>
@@ -30,20 +30,25 @@
         <div>
           <span>Долго, дорого,<br>  скрупулезно.</span>
           <p>Математически выверенный дизайн<br>  для вашего сайта или мобильного приложения.</p>
-          <a href="#">Узнать больше</a>
+          <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
         </div>
         <div>
           <span>Любим математику<br>  как никто другой.</span>
           <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-          <a href="#">Узнать больше</a>
+          <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
         </div>
         <div>
           <span>Только ночь,<br> только хардкор</span>
           <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <a href="#">Узнать больше</a>
+          <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
         </div>
-        <div>
-          <!--Здесь будут переключатели слайдера-->
+        <div class="slider-btn">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <label for="btn-1"></label>
+          <input type="radio" id="btn-2" name="toggle">
+          <label for="btn-2"></label>
+          <input type="radio" id="btn-3" name="toggle">
+          <label for="btn-3"></label>
         </div>
       </section>
 
@@ -105,13 +110,13 @@
         </div>
       </section>
 
-      <section class="partners">
-        <h2 class="visually-hidden">Наши партнёры</h2>
+      <section class="customers">
+        <h2 class="visually-hidden">Наши клиенты</h2>
         <ul>
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="Логотип HTML Aacademy"></a></li>
-          <li><a href="#"><img src="img/borodinski-logo.png" width="209" height="90" alt="Логотип Borodinski"></a></li>
-          <li><a href="#"><img src="img/pink-logo.png" width="185" height="52" alt="Логотип Pimk"></a></li>
-          <li><a href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Mishka"></a></li>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="Логотип HTML Aacademy"></a></li>
+          <li><a href="#" aria-label="Ссылка на сайт Borodinski"><img src="img/borodinski-logo.png" width="209" height="90" alt="Логотип Borodinski"></a></li>
+          <li><a href="#" aria-label="Ссылка на сайт Pimk"><img src="img/pink-logo.png" width="185" height="52" alt="Логотип Pimk"></a></li>
+          <li><a href="#" aria-label="Ссылка на сайт Mishka"><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Mishka"></a></li>
         </ul>
       </section>
         
@@ -121,13 +126,13 @@
           <p>Nёrds design studio</p>
           <address>
             <span>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  </span>
-            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a href="tel:+78122757575" aria-label="Телефон для связи">тел. +7 (812) 275-75-75</a>
           </address>
           <button>Напишите нам</button>
         </div>
 
         <div>
-          <img src="img/map.png" width="1440" height="416" alt="Изображение карты">
+          <img src="img/map.png" width="1440" height="416" alt="Изображение карты" aria-label="Наш адрес на карте">
           <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
         </div>
       </section>
@@ -138,13 +143,13 @@
         <h2 class="visually-hidden">Ссылки на наши социальные сети</h2>
         <ul>
           <li>
-            <a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте" title="Перейти на страницу vk"></a>
+            <a href="#" aria-label="Ссылка на страницу в Вконтакте"></a>
           </li>
           <li>
-            <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook" title="Перейти на страницу fb"></a>
+            <a href="#" aria-label="Ссылка на страницу в Фейсбук"></a>
           </li>
           <li>
-            <a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Instagram" title="Перейти на страницу instagram"></a>
+            <a href="#" aria-label="Ссылка на страницу в Инстаграм"></a>
           </li>
         </ul>
       </section>

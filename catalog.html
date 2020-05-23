@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="index">
-      <a href="index.html">
+      <a href="index.html" aria-label="Ссылка на главную страницу Нердс">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип магазина шаблонов Нёрдс">
       </a>
       <nav>
@@ -17,7 +17,7 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="#">
+        <a href="#" aria-label="Ссылка на корзину">
           <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины" title="Перейти в корзину"> 
           <span>Корзина</span>
         </a>
@@ -31,6 +31,25 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <aside class="filters">
           <form action="https://echo.htmlacademy.ru/" method="get">
+            <div class="range-filter">
+              <p>Стоимость:</p>
+              <div>
+                <span></span>
+                <span></span>
+                <div></div>
+              </div>
+              <div class="price-filter">
+                <label class="min-price">
+                  От
+                  <input type="text" placeholder="0">
+                </label>
+                <label class="max-price">
+                  До
+                  <input type="text" placeholder="15 000">
+                </label>
+              </div>
+            </div>
+
             <fieldset>
               <legend>Сетка:</legend>
               <ul>
@@ -81,20 +100,20 @@
         <div>
           <p>Сортировать:</p>
           <ul>
-            <li><a href="" title="Сортировка по цене">По цене</a></li>
-            <li><a href="" title="Сортировка по типу">По типу</a></li>
-            <li><a href="" title="Сортировка по названию">По названию</a></li>
+            <li><a href="#" aria-label="Сортировка по цене">По цене</a></li>
+            <li><a href="#" aria-label="Сортировка по типу">По типу</a></li>
+            <li><a href="#" aria-label="Сортировка по названию">По названию</a></li>
           </ul>
 
-          <a href="">Вверх</a>
-          <a href="">Вниз</a>
+          <a href="#" aria-label="Сортировка снизу вверх">Вниз</a>
+          <a href="#" aria-label="Сортировка сверху вниз">Вверх</a>
         </div>
     
         <section>
           <h2 class="visually-hidden">Шаблоны</h2>
           <ul>
             <li>
-              <a href="">
+              <a href="#" aria-label="Ссылка на макет Sedona">
                 <img src="img/sedona.jpg" width="360" height="580" alt="Макет Sedona">
               </a>
               <div>
@@ -104,7 +123,7 @@
               </div>
             </li>
             <li>
-              <a href="">
+              <a href="#" aria-label="Ссылка на макет Pink">
                 <img src="img/pink.jpg" width="358" height="578" alt="Макет Pink">
               </a>
               <div>
@@ -114,7 +133,7 @@
               </div>
             </li>
             <li>
-              <a href="">
+              <a href="#" aria-label="Ссылка на макет Barbershop">
                 <img src="img/borodinski.jpg" width="358" height="578" alt="Макет Barbershop">
               </a>
               <div>
@@ -124,7 +143,7 @@
               </div>
             </li>
             <li>
-              <a href="">
+              <a href="#" aria-label="Ссылка на макет Mishka">
                 <img src="img/mishka.jpg" width="358" height="578" alt="Макет Mishka">
               </a>
               <div>
@@ -134,7 +153,7 @@
               </div>             
             </li>
             <li>
-              <a href="">
+              <a href="#" aria-label="Ссылка на макет A Plus">
                 <img src="img/aplus.jpg" width="358" height="578" alt="Макет A Plus">
               </a>
               <div>
@@ -144,7 +163,7 @@
               </div>              
             </li>
             <li>
-              <a href="">
+              <a href="#" aria-label="Ссылка на макет Кваст">
                 <img src="img/kvast.jpg" width="358" height="578" alt="Макет Кваст">
               </a>
               <div>
@@ -159,26 +178,26 @@
 
       <nav>
         <ul>
-          <li><a href="">1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">Следующая</a></li>
+          <li><a href="#" aria-label="Ссылка на первую страницу каталога">1</a></li>
+          <li><a href="#" aria-label="Ссылка на вторую страницу каталога">2</a></li>
+          <li><a href="#" aria-label="Ссылка на третью страницу каталога">3</a></li>
+          <li><a href="#" aria-label="Ссылка на следующую страницу каталога">Следующая</a></li>
         </ul>
       </nav>
 
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <div>
-          <p>NЁRDS DESIGN STUDIO</p>
+          <p>Nёrds design studio</p>
           <address>
             <span>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  </span>
-            <span>тел. +7 (812) 275-75-75</span>
+            <a href="tel:+78122757575" aria-label="Телефон для связи">тел. +7 (812) 275-75-75</a>
           </address>
           <button>Напишите нам</button>
         </div>
 
         <div>
-          <img src="img/map.png" width="1440" height="416" alt="Изображение карты">
+          <img src="img/map.png" width="1440" height="416" alt="Изображение карты" aria-label="Наш адрес на карте">
           <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
         </div>
       </section>
@@ -189,13 +208,13 @@
         <h2 class="visually-hidden">Ссылки на наши социальные сети</h2>
         <ul>
           <li>
-            <a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте" title="Перейти на страницу vk"></a>
+            <a href="#" aria-label="Ссылка на страницу в Вконтакте"></a>
           </li>
           <li>
-            <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook" title="Перейти на страницу fb"></a>
+            <a href="#" aria-label="Ссылка на страницу в Фейсбук"></a>
           </li>
           <li>
-            <a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Instagram" title="Перейти на страницу instagram"></a>
+            <a href="#" aria-label="Ссылка на страницу в Инстаграм"></a>
           </li>
         </ul>
       </section>
