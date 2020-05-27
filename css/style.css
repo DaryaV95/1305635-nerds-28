@@ -13,15 +13,15 @@
     --special-gray: #666666;
     --special-light-gray: #e1e1e1;
 
-    --focus-logo: #a6a6a6;
+    --active-logo: #a6a6a6;
     --hover-gray:#dfdfdf;
-    --focus-gray:#d5d5d5;
+    --active-gray:#d5d5d5;
     --hover-red: #e74246;
-    --focus-red: #d7373b;
+    --active-red: #d7373b;
     --hover-green: #00bc6c;
-    --focus-green:#00aa62;
+    --active-green:#00aa62;
     --hover-yellow:#eab534;
-    --focus-yellow:#e5a722;
+    --active-yellow:#e5a722;
 
   }
 
@@ -34,7 +34,7 @@
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-extra-dark);
-    background-color: var(--neutral-gray);
+    background-color: var(--basic-white);
   }
 
   a {
@@ -47,7 +47,8 @@
     height: auto;
   }
 
-  .main-header {
+  .main-header,
+  .slider {
     background-color: var(--basic-gray);
   }
 
@@ -63,13 +64,20 @@
   }
   
   .site-navigation,
-  .footer-contacts {
+  .footer-contacts,
+  .filter-text,
+  .sorting-list,
+  .patterns-list,
+  .catalog-list-nav,
+  .customers-list {
     list-style: none;
   }
   
   /* User navigation */
 
-  /* Здесь будет стили логотипа */
+  .main-header-logo:active path {
+    fill: #a6a6a6;
+  }
 
   .basket-link {
     background-image: url(/img/cart-icon.svg);
@@ -86,8 +94,8 @@
     color: var(--basic-red);
   }
 
-  .site-navigation a:focus,
-  .basket-navigation a:focus {
+  .site-navigation a:active,
+  .basket-navigation a:active {
     color: var(--basic-black);
     mix-blend-mode: normal;
     opacity: 0.3;
@@ -99,16 +107,51 @@
     color: var(--basic-black);
   }
 
-  /*Services*/
+  /*Slider*/
 
-  .services {
+  .slider-item span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+
+    color: var(--basic-black);
+  }
+
+  .slider-item p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
 
     color: var(--basic-extra-dark);
-    background-color: var(--basic-white);
+  }
+
+  .slider-item a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    border-radius: 3px;
+    padding: 17px 54px 15px 54px;
+  }
+
+  /*Services*/
+
+  .services {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--basic-extra-dark);
   }
   
   .services h3 {
@@ -143,12 +186,14 @@
     background-color: var(--basic-red);
   }
 
-  .button-order-red:hover {
+  .button-order-red:hover,
+  .slider-item a:hover {
     background-color: var(--hover-red);
   }
 
-  .button-order-red:focus {
-    background-color: var(--focus-red);
+  .button-order-red:active,
+  .slider-item a:active {
+    background-color: var(--active-red);
   }
 
   .button-order-green {
@@ -159,8 +204,8 @@
     background-color: var(--hover-green);  
   }
 
-  .button-order-green:focus {
-    background-color: var(--focus-green); 
+  .button-order-green:active {
+    background-color: var(--active-green); 
   }
 
   .button-order-yellow {
@@ -171,15 +216,163 @@
     background-color: var(--hover-yellow);
   }
 
-  .button-order-yellow:focus {
-    background-color: var(--focus-yellow);
+  .button-order-yellow:active {
+    background-color: var(--active-yellow);
+  }
+
+  /*About-us*/
+
+  .text-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .text-slogan {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--basic-extra-dark);
+  }
+
+  .main-description h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-transform: uppercase;
+
+    color: var(--basic-extra-dark);
+  }
+
+  .description-list {
+    list-style: none;
+  }
+
+  .description-list li:before {
+    content:  "—";
+    position: relative;
+    left: -7px;
+
+    color: var(--basic-red);
+}
+
+  .description-list li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--basic-extra-dark);
+  }
+
+  .advantages span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--basic-black);
+  }
+  
+  .table-advantages th {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+
+    color: var(--basic-black);
+  }
+
+  .table-advantages sup {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+
+    color: var(--basic-black);
+  }
+
+  .table-advantages td {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: var(--basic-extra-dark);
+  }
+
+/*Customers*/
+
+  .customer-htmlacademy svg,
+  .customer-borodinski svg
+  .customer-pink svg,
+  .customer-mishka svg {
+    fill: var(--basic-black);
+    opacity: 0.2;
+}
+
+  .customer-htmlacademy svg:hover,
+  .customer-borodinski svg:hover,
+  .customer-pink svg:hover,
+  .customer-mishka svg:hover {
+    fill: var(--basic-black);
+    opacity: 1; 
+}
+
+  .customer-htmlacademy svg:active,
+  .customer-borodinski svg:active,
+  .customer-pink svg:active,
+  .customer-mishka svg:active {
+    fill: var(--basic-black); 
+    opacity: 0.1;
+}
+
+/*Map*/
+
+  .map .text-map {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    color: var(--basic-black);
+}
+
+  .map address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: var(--special-gray);
+  }
+
+  .map button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--basic-white);
+
+    border-radius: 3px;
+    background-color: var(--basic-red);
   }
 
 /*Footer*/
-
-  .footer-wrapper {
-    background-color: var(--basic-white);
-  }
 
   .footer-item {
     display: inline-block;
@@ -214,10 +407,10 @@
     background-color: var(--hover-red);
   }
 
-  .footer-item-vk:focus,
-  .footer-item-fb:focus,
-  .footer-item-inst:focus {
-    background-color: var(--focus-red);
+  .footer-item-vk:active,
+  .footer-item-fb:active,
+  .footer-item-inst:active {
+    background-color: var(--active-red);
   }
 
   .footer-text h2 {
@@ -245,13 +438,78 @@
 
   /*Страница каталога*/
 
-  .page-catalog {
-    background-color: var(--basic-white);
+  .range-filter p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    color: var(--basic-black);
+  }
+
+  .price-filter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-transform: uppercase;
+
+    color: var(--basic-extra-dark);
+  }
+
+  .sorting p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    color: var(--basic-black);
+  }
+
+  .sorting-list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    color: var(--basic-black);
+    opacity: 0.3;
+  }
+
+  .sorting-list li:hover {
+    color: var(--basic-black);
+    opacity: 0.6;
+  }
+
+  .sorting-list li:active {
+    color: var(--basic-black);
+  }
+
+  .arrow svg {
+    fill: var(--active-logo);
+    opacity: 0.3;
+  }
+
+  .arrow svg:hover{
+    fill: var(--active-logo);
+    opacity: 0.6;
+  }
+
+  .arrow svg:active{
+    fill: var(--active-logo);
+    opacity: 1;
   }
 
   .left-column legend {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 30px;
 
@@ -292,7 +550,63 @@
     background-color: var(--hover-gray);
   }
 
-  .filter-button:focus {
-    background-color: var(--focus-gray);
+  .filter-button:active {
+    background-color: var(--active-gray);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  }
+
+  .patterns-list div a {
+    color: var(--basic-black);
+  }
+
+  .patterns-list div a:hover {
+    color: var(--basic-red);
+  }
+
+  .patterns-list div a:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+  }
+
+  .patterns-list div button {
+    padding: 17px 72px 15px 72px;
+    border-radius: 3px;
+
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+  }
+
+  .patterns-list div button:hover {
+    color: var(--basic-white);
+    background-color: var(--hover-red);
+  }
+
+  .patterns-list div button:active {
+    color: var(--basic-white);
+    background-color: var(--active-red);
+  }
+
+  .patterns-list p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+    text-align: center;
+
+    color: var(--special-gray);
+  }
+
+  .catalog-list-nav a {
+    border-radius: 3px;
+    background-color: var(--basic-gray);
+  }
+
+  .catalog-list-nav a:hover {
+    background-color: var(--hover-gray);
+  }
+
+  .catalog-list-nav a:active {
+    background-color: var(--active-gray);
+    color: var(--basic-black);
   }
