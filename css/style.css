@@ -76,12 +76,7 @@
   /* User navigation */
 
   .main-header-logo:active path {
-    fill: #a6a6a6;
-  }
-
-  .basket-link {
-    background-image: url(/img/cart-icon.svg);
-    background-repeat: no-repeat;
+    fill: var(--active-logo);
   }
    
   .site-navigation a,
@@ -164,6 +159,13 @@
   }
 
   .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    margin: 0;
+    margin-top: 80px;
+    padding: 0;
+    padding-bottom: 80px;
     list-style: none;
   }
 
@@ -311,29 +313,26 @@
 
 /*Customers*/
 
-  .customer-htmlacademy svg,
-  .customer-borodinski svg
-  .customer-pink svg,
-  .customer-mishka svg {
-    fill: var(--basic-black);
+  .customer-mishka,
+  .customer-htmlacademy,
+  .customer-borodinski,
+  .customer-pink {
     opacity: 0.2;
-}
+  }
 
-  .customer-htmlacademy svg:hover,
-  .customer-borodinski svg:hover,
-  .customer-pink svg:hover,
-  .customer-mishka svg:hover {
-    fill: var(--basic-black);
-    opacity: 1; 
-}
+  .customer-mishka:hover,
+  .customer-htmlacademy:hover,
+  .customer-borodinski:hover,
+  .customer-pink:hover {
+    opacity: 1;
+  }
 
-  .customer-htmlacademy svg:active,
-  .customer-borodinski svg:active,
-  .customer-pink svg:active,
-  .customer-mishka svg:active {
-    fill: var(--basic-black); 
+  .customer-mishka:active,
+  .customer-htmlacademy:active,
+  .customer-borodinski:active,
+  .customer-pink:active {
     opacity: 0.1;
-}
+  }
 
 /*Map*/
 
@@ -609,4 +608,181 @@
   .catalog-list-nav a:active {
     background-color: var(--active-gray);
     color: var(--basic-black);
+  }
+
+  /*СЕТКА*/
+
+  /*Index*/
+
+  .page {
+    height: 100%;
+  }
+
+  .page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+  }
+
+  .site-navigation {
+    
+    list-style: none;
+  }
+
+  .basket-navigation {
+    
+    list-style: none;
+  }
+
+  .main-header {
+    padding-top: 50px;
+  }
+
+ .container {
+   width: 1160px;
+   margin: 0 auto;
+ }
+
+ .main-menu {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .main-navigation {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+ }
+
+ .basket-navigation .basket-link {
+    padding-left: 25px;
+}
+
+  .services {
+    margin-bottom: 121px;
+    border-bottom: 2px solid #eeeeee;  
+}
+
+  .services-item {
+    text-align: start;
+  }
+
+  .services-item p {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    
+  }
+
+  .main-footer {
+    margin-top: 68px;
+  }
+
+  .footer-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+  }
+
+  .main-footer .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+  .footer-contacts {
+    margin: 0;
+    margin-right: 140px;
+    width: 260px;
+  }
+
+  .footer-text h2 {
+    margin: 0;
+  }
+
+  /*Catalog*/
+
+  .title-catalog {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+
+    padding-top: 78px;
+    padding-bottom: 108px;
+    text-align: center;
+
+    color: var(--basic-black);
+  }
+ 
+  .container-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+  }
+
+  .filters {
+    width: 260px;
+    margin-right: 140px;
+  }
+
+  .fieldset ul {
+    margin: 0;
+  }
+
+  .fieldset legend {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .filter-text-checkbox {
+    margin-bottom: 50px;
+  }
+
+  .fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 46px;
+    border: none;
+  }
+
+  .filter fieldset:last-child {
+    margin-bottom: 50px;
+  }
+
+  .patterns-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 760px;
+    box-sizing: border-box;
+    
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .patterns-list li {
+    padding-bottom: 30px;
+  }
+
+  .sorting {
+    display: flex;
+  }
+
+  .patterns-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pattern {
+    width: 360px;
+    height: 570px;
+  }
+
+  .pattern:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .pattern a {
+    text-transform: uppercase;
   }
