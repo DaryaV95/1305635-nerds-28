@@ -626,13 +626,23 @@
   }
 
   .site-navigation {
-    
+    margin: 0;
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
   }
 
   .basket-navigation {
-    
-    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+    text-align: right;
+
+    color: var(--basic-black);
   }
 
   .main-header {
@@ -655,6 +665,10 @@
     padding: 0;
  }
 
+ .main-navigation ul {
+   padding: 0;
+ }
+
  .basket-navigation .basket-link {
     padding-left: 25px;
 }
@@ -675,7 +689,8 @@
   }
 
   .main-footer {
-    margin-top: 68px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 
   .footer-wrapper {
@@ -690,8 +705,11 @@
   
   .footer-contacts {
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     margin-right: 140px;
-    width: 260px;
+    width: 270px;
   }
 
   .footer-text h2 {
