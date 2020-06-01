@@ -438,6 +438,7 @@
   /*Страница каталога*/
 
   .range-filter p{
+    margin: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -460,6 +461,7 @@
   }
 
   .sorting p{
+    margin: 0;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -596,9 +598,16 @@
     color: var(--special-gray);
   }
 
-  .catalog-list-nav a {
-    border-radius: 3px;
+  .page-link {
+    height: 50px;
+    text-decoration: none;
+    padding: 16px 21px;
     background-color: var(--basic-gray);
+    border-radius: 3%;
+  }
+
+  .catalog-list-nav {
+    padding: 0;
   }
 
   .catalog-list-nav a:hover {
@@ -630,6 +639,7 @@
     width: 440px;
     display: flex;
     justify-content: space-between;
+   
     list-style: none;
   }
 
@@ -651,12 +661,14 @@
 
  .container {
    width: 1160px;
-   margin: 0 auto;
+   margin-right: auto;
+   margin-left: auto;
  }
 
  .main-menu {
    display: flex;
    justify-content: space-between;
+   align-items: center;
  }
 
  .main-navigation {
@@ -674,7 +686,6 @@
 }
 
   .services {
-    margin-bottom: 121px;
     border-bottom: 2px solid #eeeeee;  
 }
 
@@ -686,6 +697,33 @@
     margin-top: 16px;
     margin-bottom: 32px;
     
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1160px;
+    margin-top: 39px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 73px;
+    column-gap: 154px;
+  }
+
+  .customers-list {
+    width: 1160px;
+    margin: 0;
+    padding: 0;
+    padding-top: 46px;
+    padding-bottom: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
   }
 
   .main-footer {
@@ -718,7 +756,15 @@
 
   /*Catalog*/
 
+  .catalog {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    padding-top: 55px;
+    width: 760px;
+    }
+
   .title-catalog {
+    margin: 0;
     font-style: normal;
     font-weight: 500;
     font-size: 55px;
@@ -732,16 +778,18 @@
   }
  
   .container-catalog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     width: 1160px;
-    margin: 0 auto;
+    min-height: 2350px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .filters {
+    padding-top: 55px;
     width: 260px;
-    margin-right: 140px;
   }
 
   .fieldset ul {
@@ -776,6 +824,7 @@
     box-sizing: border-box;
     
     margin: 0;
+    padding: 0;
     margin-bottom: 55px;
   }
 
@@ -785,6 +834,17 @@
 
   .sorting {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  .sorting-list {
+    width: 272px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .patterns-list {
@@ -803,4 +863,11 @@
 
   .pattern a {
     text-transform: uppercase;
+  }
+
+  .catalog-list-nav {
+    width: 443px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 260px;
+    column-gap: 11px;
   }
