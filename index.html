@@ -9,7 +9,7 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="container">
+      <div class="wrapper">
         <div class="main-menu">
           <div class="memu-logo">
             <a class="main-header-logo" href="index.html" aria-label="На главную страницу Нердс">
@@ -21,10 +21,10 @@
           </div>
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li><a href="#">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="menu-item"><a href="#">Студия</a></li>
+              <li class="menu-item"><a href="#">Клиенты</a></li>
+              <li class="menu-item"><a href="catalog.html">Магазин</a></li>
+              <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
           </nav>
           <div class="basket-navigation">
@@ -37,32 +37,34 @@
 
     <main>
       <section class="slider">
-        <div class="slider-item">
-          <span>Долго, дорого,<br>  скрупулезно.</span>
-          <p>Математически выверенный дизайн<br>  для вашего сайта или мобильного приложения.</p>
-          <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
-        </div>
-        <div class="slider-item">
-          <span>Любим математику<br>  как никто другой.</span>
-          <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-          <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
-        </div>
-        <div class="slider-item">
-          <span>Только ночь,<br> только хардкор</span>
-          <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
-        </div>
-        <div class="slider-btn">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <label for="btn-1"></label>
-          <input type="radio" id="btn-2" name="toggle">
-          <label for="btn-2"></label>
-          <input type="radio" id="btn-3" name="toggle">
-          <label for="btn-3"></label>
+        <div class="wrapper">
+          <div class="slider-item">
+            <span>Долго, дорого,<br>  скрупулезно.</span>
+            <p>Математически выверенный дизайн<br>  для вашего сайта или мобильного приложения.</p>
+            <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
+          </div>
+          <div class="slider-item">
+            <span>Любим математику<br>  как никто другой.</span>
+            <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+            <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
+          </div>
+          <div class="slider-item">
+            <span>Только ночь,<br> только хардкор</span>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a href="#" aria-label="Ссылка на каталог">Узнать больше</a>
+          </div>
+          <div class="slider-btn">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <label for="btn-1"></label>
+            <input type="radio" id="btn-2" name="toggle">
+            <label for="btn-2"></label>
+            <input type="radio" id="btn-3" name="toggle">
+            <label for="btn-3"></label>
+          </div>
         </div>
       </section>
 
-      <section class="services container">
+      <section class="services wrapper">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item">
@@ -86,7 +88,7 @@
         </ul>
       </section>
 
-      <section class="about-us">
+      <section class="about-us wrapper">
         <div class="main-description">
           <h2 class="visually-hidden">О нас</h2>
           <p class="text-title">Мы — маленькая, но гордая  дизайн-студия из Краснодара.</p>
@@ -120,7 +122,7 @@
         </div>
       </section>
 
-      <section class="customers">
+      <section class="customers wrapper">
         <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="customers-list">
           <li>
@@ -135,7 +137,7 @@
           </li>
           <li>
             <a class="customer-pink" href="#" aria-label="Перейти на сайт Pimk">
-              <img src="/img/pink-logo-png.png" width="185" height="52" alt="Логотип Pimk">          
+              <img src="/img/pink-logo-png.png" width="185" height="52" alt="Логотип Pink">          
             </a>
           </li>
           <li>
@@ -148,24 +150,27 @@
         
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div>
-          <p class="text-map">Nёrds design studio</p>
-          <address>
-            <span>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  </span><br>
-            <a href="tel:+78122757575" aria-label="Телефон для связи">тел. +7 (812) 275-75-75</a>
-          </address>
-          <button class="btn-map">Напишите нам</button>
-        </div>
+        <div class="address">
+          <div class="address-container wrapper">
+            <div class="address-wrapper">
+              <p class="text-map">Nёrds design studio</p>
+              <address>
+                <p class="address-text">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  </p><br>
+                <a href="tel:+78122757575" aria-label="Телефон для связи">тел. +7 (812) 275-75-75</a>
+              </address>
+              <button class="btn-map">Напишите нам</button>
+            </div>
+          </div>
 
-        <div>
-          <img src="img/map.png" width="1440" height="416" alt="Изображение карты" aria-label="Наш адрес на карте">
-          <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2117689930883!2d30.320772623179398!3d59.938681683716354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1591106760995!5m2!1sru!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer main-footer">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper wrapper">
         <section>
           <h2 class="visually-hidden">Ссылки на наши социальные сети</h2>
           <ul class="footer-contacts">
