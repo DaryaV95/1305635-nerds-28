@@ -634,11 +634,13 @@ button {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-
+  
   display: none;
   box-sizing: border-box;
   width: 960px;
+  min-height: 590px;
+  margin-left: -480px;
+  margin-top: -295px;
   
   background-color: var(--basic-white);
 }
@@ -1597,19 +1599,15 @@ ul.sorting-list {
 
   70% {
     transform: translateY(30px);
-    transform: translateX(-50%);
   }
 
   90% {
     transform: translateY(-10px);
-    transform: translateX(-50%);
   }
 
   100% {
     transform: translateY(0);
-    transform: translateX(-50%);
   }
-  
 }
 
 @-webkit-keyframes shake {
